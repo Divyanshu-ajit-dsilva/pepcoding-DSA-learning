@@ -27,7 +27,7 @@ public class nse_on_the_right {
     }
 
     public static int[] solve(int[] arr){
-        int[] nge = new int[arr.length];
+        int[] nse = new int[arr.length];
 
         Stack<Integer> st = new Stack<>();
         
@@ -37,7 +37,7 @@ public class nse_on_the_right {
             // run a loop till the stack is empty or element in the array is smaller than the elements in the stack
             while (st.size() > 0 && arr[i] <= arr[st.peek()]) {
                 int pos = st.peek();
-                nge[pos] = arr[i];
+                nse[pos] = arr[i];
                 st.pop();
             }
 
@@ -48,10 +48,10 @@ public class nse_on_the_right {
         // assiging -1 to the elements left in the stack i.e. elements not having a element smaller on the right
         while (st.size() > 0) {
             int pos = st.peek();
-                nge[pos] = -1;
+                nse[pos] = -1;
                 st.pop();
         }
 
-        return nge;
+        return nse;
     }
 }
