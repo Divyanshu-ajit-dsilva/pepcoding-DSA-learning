@@ -1,7 +1,7 @@
 // Program to find the next smaller element on the left
 import java.util.*;
 import java.io.*;
-public class nge_to_the_left {
+public class nse_to_the_left {
     public static void display(int[] a){
         StringBuilder sb = new StringBuilder();
         
