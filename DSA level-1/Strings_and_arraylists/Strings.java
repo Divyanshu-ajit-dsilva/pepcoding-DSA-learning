@@ -1,7 +1,7 @@
 // Program to practise on Strings in java
 public class Strings {
     public static void main(String[] args) {
-        String s = "abcd";
+        //String s = "abcd";
 
         // Loop to print all substrings of a string
         /*
